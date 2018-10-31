@@ -1,0 +1,3 @@
+[service "app"]
+serviceEndpoint = "http://localhost:8080" ; Endpoint with proto (http/https)
+serviceDomain = "localhost:9000" ; app proxy endpoint without proto
