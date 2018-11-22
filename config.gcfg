@@ -1,3 +1,12 @@
-[service "app"]
-serviceEndpoint = "http://localhost:8080" ; Endpoint with proto (http/https)
-serviceDomain = "localhost:9000" ; app proxy endpoint without proto
+;ServiceTargetEndpoint - Targer Endpoint with protocol which needs to be logged (http://hello.com ,  https://hello.com)
+;ServiceLocalDomain -  Localhost endpoint domain for which request comes excluding port (api.com, localhost.com, api.dev.com)
+;We can log more services by following the below template
+
+[service "appname"]
+ServiceTargetEndpoint = "https://facebook.com"
+ServiceLocalDomain = "localhost"
+
+
+[service "appname1"]
+ServiceTargetEndpoint = "https://linkedin.com"
+ServiceLocalDomain = "www.devfreshbots.com"
