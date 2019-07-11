@@ -1,4 +1,4 @@
-;ServiceTargetEndpoint - Targer Endpoint with protocol which needs to be logged (http://hello.com ,  https://hello.com)
+;ServiceTargetEndpoint - Target Endpoint with protocol which needs to be logged (http://hello.com ,  https://hello.com)
 ;ServiceLocalDomain -  Localhost endpoint domain for which request comes excluding port (api.com, localhost.com, api.dev.com)
 ;We can log more services by following the below template
 
@@ -8,5 +8,5 @@ ServiceLocalDomain = "localhost"
 
 
 [service "appname1"]
-ServiceTargetEndpoint = "https://linkedin.com"
+ServiceTargetEndpoint = "http://localhost:8080"
 ServiceLocalDomain = "www.devfreshbots.com"
