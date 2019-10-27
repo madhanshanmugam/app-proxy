@@ -13,7 +13,7 @@ import (
 // Config section stats here
 var config Config
 
-const appEndPoint = "localhost:9000"
+const appEndPoint = "0.0.0.0:9000" // listening on all interface
 
 type ServiceConfig struct {
 	RestartCmd      string

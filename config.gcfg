@@ -9,4 +9,4 @@ ServiceLocalDomain = "localhost"
 
 [service "appname1"]
 ServiceTargetEndpoint = "http://localhost:8080"
-ServiceLocalDomain = "www.devfreshbots.com"
+ServiceLocalDomain = "backend"
