@@ -3,7 +3,7 @@
 ;We can log more services by following the below template
 
 [service "appname"]
-ServiceTargetEndpoint = "https://facebook.com"
+ServiceTargetEndpoint = "https://stackoverflow.com"
 ServiceLocalDomain = "localhost"
 
 
