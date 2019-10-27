@@ -56,7 +56,7 @@ func (t *proxyTransport) RoundTrip(request *http.Request) (*http.Response, error
 	if nil == response {
 		log.Print(strings.Join([]string{"ERROR Endpoint : ", request.URL.Host, " could be down"},""))
 	} else if strings.Contains(response.Header.Get("Content-Type"), "application/json") {
-		//TODO if response body is encoded using gzip etc then decode accordingly
+		//TODO if response body is encoded using gzip etc then decode accordingly and try to handle Non-Authoritative-Reason: HSTS
 		body, err := httputil.DumpResponse(response, true)
 		if err != nil {
 			return nil, err
