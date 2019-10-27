@@ -71,6 +71,7 @@ func appProxy(target *url.URL) *httputil.ReverseProxy {
 		log.Println(string(requestDump))
 		log.Println("------------------------End of Request-------------")
 		targetUrl, _ := getTargetHost(req)
+		req.Host = targetUrl.Host // changing Host header to avoid blocking
 		req.URL.Scheme = targetUrl.Scheme
 		req.URL.Host = targetUrl.Host //config.Service["app"].ServiceEndpoint
 		req.URL.Path = req.URL.Path
