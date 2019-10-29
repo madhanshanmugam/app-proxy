@@ -8,11 +8,11 @@ This can also be configured as revere proxy and does the logging. Since the prox
 
 **Using Docker**
 
- `docker run --rm -it -p 9000:9000  madhanshamugam/app-proxy domainNameWithProtocol`
+ `docker run --rm -it -p 9000:9000  madhanshanmugam/app-proxy domainNameWithProtocol`
  
   example 
   
- `docker run --rm -it -p 9000:9000  madhanshamugam/app-proxy https://stackoverflow.com`
+ `docker run --rm -it -p 9000:9000  madhanshanmugam/app-proxy https://stackoverflow.com`
  
  and use the endpoint  [http://localhost:9000](url) 
  
