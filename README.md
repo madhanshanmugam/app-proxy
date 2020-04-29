@@ -1,4 +1,4 @@
-App proxy is a forward proxy, it will forward all the requests to the configured target(s) and logs the request and response as well. This majorly helps in debugging outgoing API calls without the need to enable logging at the source code. we can proxy more than one target at a time.
+App proxy is a simple forward proxy for debugging purpose, it will forward all the requests to the configured target(s) and logs the request and response. This majorly helps in debugging outgoing API calls without the need to enable logging at the source code. we can proxy more than one target at a time.
 
 This can also be configured as revere proxy and does the logging. Since the proxy is based on simple domain based routing, it doesn't require any ssl certificates to be installed on the client machine.
 
